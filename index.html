@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        
+    </head>
+    <body>
+
+        <form action="procesa.php" method="POST">
+            <fieldset>
+                <legend>Your Details:</legend>
+                <label>Name: </label>
+                <input type="text" name="Username" maxlength="20"><br>
+                <label>Email: </label>
+                <input type="email" name="email">
+
+            </fieldset>
+
+        </form>
+        <br>
+
+        <form action="procesa.php" method="POST">
+            <fieldset>
+                <legend>Your Review:</legend>
+                <label>How did you hear about us? </label>
+                <select name="mediosdecontacto">
+                    <option class="botonredondo2" value="Google">Google</option>
+                    <option class="botonredondo" value="Twitter">Twitter</option>
+                    <option class="botonredondo" value="Instagram">Instagram</option>
+                    <option class="botonredondo" value="Facebook">Facebook</option>
+                </select>    
+                
+                <br> 
+                <br>                
+                <label>Would you visit again?</label>
+                <br>
+                <input type="radio" name="reply" value="Yes"> Yes
+                <input type="radio" name="reply" value="No"> No
+                <input type="radio" name="reply" value="Maybe">Maybe
+
+                <br>
+                <br>
+                <label>Comments: </label> <br>
+                <textarea name="Comments"></textarea> 
+
+                <br>
+                <br>
+                <input type="checkbox" name="Signmeup">Sign me up for email updates
+                <br>
+                <input class="botonredondo" type="submit" value="Submit review">
+                
+        
+            </fieldset>
+            
+        </form>
+
+        
+            
+
+        </form>
+    </body>
+</html>
